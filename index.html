@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iconic Fitness</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Basic CSS to demonstrate structure, to be moved to style.css */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0; padding: 0;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #222;
+      padding: 12px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 16px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ff5722;
+    }
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      color: #000;
+    }
+    .intro {
+      text-align: center;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgb(0,0,0,0.1);
+      text-align: center;
+    }
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-weight: 700;
+      color: #000;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 10px;
+    }
+    .price {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #ff5722;
+    }
+    .old-price {
+      text-decoration: line-through;
+      color: #888;
+      margin-left: 8px;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #ff5722;
+      color: #fff;
+      border-radius: 25px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #e64a19;
+    }
+    @media(max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media(max-width: 480px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>ICONIC FITNESS</header>
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#programs">Programs</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#prices">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p class="intro">
+      We believe that all people should live pain-free, healthy, and well-rounded lives. We’re redefining what fitness means for the everyday individual. Join Iconic Fitness today.
+    </p>
+  </section>
+
+  <section id="programs">
+    <h2>What We Offer</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Diet Plan</h3>
+        <p>Customize your nutritional plan with expert guidance for a healthier lifestyle.</p>
+      </div>
+      <div class="card">
+        <h3>Workout Plan</h3>
+        <p>Personalized workout routines designed to help you achieve your fitness goals.</p>
+      </div>
+      <div class="card">
+        <h3>Steam Bath</h3>
+        <p>Relax and rejuvenate with our state-of-art steam bath facilities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <h2>Our Schedule</h2>
+    <p class="intro">Choose a program duration that fits your lifestyle and get started today!</p>
+  </section>
+
+  <section id="prices">
+    <h2>Choose Your Price Plans</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Monthly</h3>
+        <p><span class="price">₹ 3000</span><span class="old-price">₹ 4000</span></p>
+        <ul>
+          <li>Diet Plan</li>
+          <li>Workout Plan</li>
+          <li>Steam Bath</li>
+        </ul>
+        <a class="btn" href="#contact">Get Started</a>
+      </div>
+      <div class="card">
+        <h3>Three Months</h3>
+        <p><span class="price">₹ 7500</span><span class="old-price">₹ 8200</span></p>
+        <ul>
+          <li>Diet Plan</li>
+          <li>Workout Plan</li>
+          <li>Steam Bath</li>
+        </ul>
+        <a class="btn" href="#contact">Get Started</a>
+      </div>
+      <div class="card">
+        <h3>Six Months</h3>
+        <p><span class="price">₹ 10000</span><span class="old-price">₹ 12000</span></p>
+        <ul>
+          <li>Diet Plan</li>
+          <li>Workout Plan</li>
+          <li>Steam Bath</li>
+        </ul>
+        <a class="btn" href="#contact">Get Started</a>
+      </div>
+      <div class="card">
+        <h3>Yearly</h3>
+        <p><span class="price">₹ 17000</span><span class="old-price">₹ 20000</span></p>
+        <ul>
+          <li>Diet Plan</li>
+          <li>Workout Plan</li>
+          <li>Steam Bath</li>
+        </ul>
+        <a class="btn" href="#contact">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p class="intro">Ready to get started? Reach out with your questions or book a visit.</p>
+    <form>
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>
